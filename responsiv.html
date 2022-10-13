@@ -1,0 +1,204 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="13HTML__CSS_0"></a>13.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Responsive_web_design_1"></a>Responsive web design</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="What_is_a_responsive_web_design_6"></a>What is a responsive web design?</h4>
+<ul>
+<li class="has-line-data" data-line-start="8" data-line-end="9">The layout changes depending on the screensize and resolution that the user has</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Responsive web design makes your web page look good on all devices.</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Desktop, mobile, tablet, watches</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12">Screen sizes and resolutions differ on each device/screen</li>
+</ul>
+<hr>
+<p class="has-line-data" data-line-start="17" data-line-end="19">&lt;img style=“margin-top: 0px;” src=&quot;/media/html-css-images/html-css-13/resp.png&quot; alt=“different screens”&gt;<br>
+&lt;a href=&quot;<a href="https://www.w3schools.com/css/css_rwd_intro.asp">https://www.w3schools.com/css/css_rwd_intro.asp</a>&quot;&gt;More examples&lt;/a&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=23 data-line-end=24 ><a id="Different_techniques_23"></a>Different techniques</h4>
+<ul>
+<li class="has-line-data" data-line-start="25" data-line-end="26">Fluid grids, columns and sections has relative values (%)</li>
+<li class="has-line-data" data-line-start="26" data-line-end="27">Flexbox &amp; CSS grid</li>
+<li class="has-line-data" data-line-start="27" data-line-end="28">CSS3 Media queries</li>
+<li class="has-line-data" data-line-start="28" data-line-end="29">(JavaScript solutions)</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=34 data-line-end=35 ><a id="Viewport_34"></a>Viewport</h4>
+<ul>
+<li class="has-line-data" data-line-start="36" data-line-end="37">The viewport is the user’s visible area of a web page.</li>
+<li class="has-line-data" data-line-start="37" data-line-end="38">The viewport will be smaller on a mobile phone than on a computer screen.</li>
+<li class="has-line-data" data-line-start="38" data-line-end="39">Back in the days it was common to just scale down the site from desktop to mobile</li>
+<li class="has-line-data" data-line-start="39" data-line-end="40">&lt;a href=&quot;<a href="https://www.w3schools.com/css/css_rwd_viewport.asp">https://www.w3schools.com/css/css_rwd_viewport.asp</a>&quot;&gt;W3schools example&lt;/a&gt;</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=45 data-line-end=46 ><a id="Viewport__meta_tag_45"></a>Viewport  meta tag</h4>
+<ul>
+<li class="has-line-data" data-line-start="46" data-line-end="47">The browser will (probably) render the width of the page at the width of its own screen.</li>
+<li class="has-line-data" data-line-start="47" data-line-end="48">If that screen is 480px wide, the browser window will be 480px wide, rather than way zoomed out and showing 960px.</li>
+<li class="has-line-data" data-line-start="48" data-line-end="50"><a href="https://css-tricks.com/snippets/html/responsive-meta-tag/">CSS-Tricks meta tag description</a></li>
+</ul>
+<pre><code class="has-line-data" data-line-start="51" data-line-end="53" class="language-HTML">  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"viewport"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"width=device-width, initial-scale=1"</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=58 data-line-end=59 ><a id="Grid_view_58"></a>Grid view</h4>
+<ul>
+<li class="has-line-data" data-line-start="60" data-line-end="61">A grid-view, means that the page is divided into columns</li>
+<li class="has-line-data" data-line-start="61" data-line-end="62">A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=67 data-line-end=68 ><a id="12_column_grid_67"></a>12 column grid</h4>
+<p class="has-line-data" data-line-start="69" data-line-end="70">&lt;img src=&quot;/media/html-css-images/html-css-13/grid.png&quot; alt=“gid”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=74 data-line-end=75 ><a id="Responsive_Grid_74"></a>Responsive Grid</h4>
+<pre><code class="has-line-data" data-line-start="77" data-line-end="90" class="language-CSS">  <span class="hljs-class">.col-1</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">8.33%</span></span></span>;}</span>
+  <span class="hljs-class">.col-2</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">16.66%</span></span></span>;}</span>
+  <span class="hljs-class">.col-3</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">25%</span></span></span>;}</span>
+  <span class="hljs-class">.col-4</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">33.33%</span></span></span>;}</span>
+  <span class="hljs-class">.col-5</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">41.66%</span></span></span>;}</span>
+  <span class="hljs-class">.col-6</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;}</span>
+  <span class="hljs-class">.col-7</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">58.33%</span></span></span>;}</span>
+  <span class="hljs-class">.col-8</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">66.66%</span></span></span>;}</span>
+  <span class="hljs-class">.col-9</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">75%</span></span></span>;}</span>
+  <span class="hljs-class">.col-10</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">83.33%</span></span></span>;}</span>
+  <span class="hljs-class">.col-11</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">91.66%</span></span></span>;}</span>
+  <span class="hljs-class">.col-12</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="90" data-line-end="91"><a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_cols">w3schools example</a></p>
+<hr>
+<h4 class="code-line" data-line-start=97 data-line-end=98 ><a id="Responsive_Grid_97"></a>Responsive Grid</h4>
+<ul>
+<li class="has-line-data" data-line-start="99" data-line-end="100">The grid should be 12</li>
+<li class="has-line-data" data-line-start="100" data-line-end="102">So the columns should add up to 12 always</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="103" data-line-end="108" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-3"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- 25% --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-9"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- 75% --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p class="has-line-data" data-line-start="108" data-line-end="109"><a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_cols">w3schools example</a></p>
+<hr>
+<h4 class="code-line" data-line-start=116 data-line-end=117 ><a id="Media_Queries_116"></a>Media Queries</h4>
+<ul>
+<li class="has-line-data" data-line-start="117" data-line-end="118">A CSS technique introduced in CSS3.</li>
+<li class="has-line-data" data-line-start="118" data-line-end="120">It uses the @media rule to include a block of CSS properties only if a certain condition is true.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="121" data-line-end="132" class="language-CSS">  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> not|only mediatype and (mediafeature and|or|not mediafeature) </span>{
+    <span class="hljs-comment">/*CSS-Code;*/</span>
+  }
+
+  <span class="hljs-comment">/* If the browser window is 480px or smaller, the background color will be green: */</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (max-width: <span class="hljs-number">480px</span>) </span>{
+    <span class="hljs-tag">body</span> <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> green</span></span>;
+    }</span>
+  }
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=137 data-line-end=138 ><a id="Linking_different_stylesheets_depending_on_screen_size_137"></a>Linking different stylesheets depending on screen size</h4>
+<pre><code class="has-line-data" data-line-start="140" data-line-end="144" class="language-HTML">  <span class="hljs-comment">&lt;!-- If the screen is 900px or wider widescreen.css will be loaded --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"screen and (min-width: 900px)"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"widescreen.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"screen and (max-width: 600px)"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"smallscreen.css"</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=150 data-line-end=151 ><a id="media_Rule_150"></a>@media Rule</h4>
+<p class="has-line-data" data-line-start="152" data-line-end="153">Can be used to check:</p>
+<ul>
+<li class="has-line-data" data-line-start="154" data-line-end="155">width and height of the viewport (min/max).</li>
+<li class="has-line-data" data-line-start="155" data-line-end="156">width and height of the device (min/max).</li>
+<li class="has-line-data" data-line-start="156" data-line-end="157">orientation (landscape/portrait).</li>
+<li class="has-line-data" data-line-start="157" data-line-end="159">resolution.</li>
+</ul>
+<p class="has-line-data" data-line-start="159" data-line-end="160">&lt;a href=&quot;<a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_media_bg">https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_media_bg</a>&quot; target=&quot;_blank&quot;&gt;Try on w3schools&lt;/a&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=165 data-line-end=166 ><a id="Orientation_Portrait__Landscape_165"></a>Orientation: Portrait / Landscape</h4>
+<ul>
+<li class="has-line-data" data-line-start="167" data-line-end="169">Change layout of a page depending on the orientation of the browser.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="170" data-line-end="176" class="language-CSS">  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (orientation: landscape) </span>{
+    <span class="hljs-tag">body</span> <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> lightblue</span></span>;
+    }</span>
+  }
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=181 data-line-end=182 ><a id="Media_rules_needs_to_be_placed_beneath_the_style_they_effect_181"></a>Media rules needs to be placed beneath the style they effect.</h4>
+<hr>
+<h4 class="code-line" data-line-start=187 data-line-end=188 ><a id="Mobile_first_187"></a>Mobile first</h4>
+<ul>
+<li class="has-line-data" data-line-start="189" data-line-end="190">Mobile First means designing for mobile before designing for desktop or any other device.</li>
+<li class="has-line-data" data-line-start="190" data-line-end="191">Instead of changing styles when the width gets smaller, we should change the design when the width gets larger.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=196 data-line-end=197 ><a id="Breakpoints_196"></a>Breakpoints</h4>
+<ul>
+<li class="has-line-data" data-line-start="198" data-line-end="200">A breakpoint is where certain parts of the design will behave differently on each side of the breakpoint.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="201" data-line-end="215" class="language-CSS"><span class="hljs-comment">/* For mobile phones: */</span>
+<span class="hljs-attr_selector">[class*="col-"]</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+}</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">768px</span>) </span>{
+  <span class="hljs-comment">/* For desktop: */</span>
+  <span class="hljs-class">.col-1</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">25%</span></span></span>;}</span>
+  <span class="hljs-class">.col-2</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;}</span>
+  <span class="hljs-class">.col-3</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">75%</span></span></span>;}</span>
+  <span class="hljs-class">.col-4</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;}</span>
+}
+<span class="hljs-comment">/* Mobile first, since we are changing styles when the width gets larger than 768px. */</span>
+</code></pre>
+<p class="has-line-data" data-line-start="216" data-line-end="217"><a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mobilefirst">Try on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=222 data-line-end=223 ><a id="Typical_Device_Breakpoints_222"></a>Typical Device Breakpoints</h4>
+<ul>
+<li class="has-line-data" data-line-start="224" data-line-end="225">Hard to create an exact breakpoint for each device, since there are tons of screens and devices with different widths and heights</li>
+<li class="has-line-data" data-line-start="225" data-line-end="227">Five groups, to make it easier</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="228" data-line-end="243" class="language-CSS">  <span class="hljs-comment">/* Extra small devices (phones, 600px and down) */</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (max-width: <span class="hljs-number">600px</span>) </span>{...}
+
+  <span class="hljs-comment">/* Small devices (portrait tablets and large phones, 600px and up) */</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">600px</span>) </span>{...}
+
+  <span class="hljs-comment">/* Medium devices (landscape tablets, 768px and up) */</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">768px</span>) </span>{...}
+
+  <span class="hljs-comment">/* Large devices (laptops/desktops, 992px and up) */</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">992px</span>) </span>{...}
+
+  <span class="hljs-comment">/* Extra large devices (large laptops and desktops, 1200px and up) */</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">1200px</span>) </span>{...}
+</code></pre>
+<p class="has-line-data" data-line-start="244" data-line-end="245"><a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints">Try on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=250 data-line-end=251 ><a id="Multiple_breakpoints_250"></a>Multiple breakpoints</h4>
+<p class="has-line-data" data-line-start="251" data-line-end="252">&lt;a href=&quot;<a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s">https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s</a>&quot;&gt;Example&lt;/a&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=256 data-line-end=257 ><a id="It_is_not_uncommon_to_build_two_versions_of_the_entire_siteapp_256"></a>It is not uncommon to build two versions of the entire site/app</h4>
+<ul>
+<li class="has-line-data" data-line-start="258" data-line-end="259">Mobile - <a href="https://mobil.blocket.se/">https://mobil.blocket.se/</a></li>
+<li class="has-line-data" data-line-start="259" data-line-end="260">Desktop - <a href="https://www.blocket.se/">https://www.blocket.se/</a></li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=265 data-line-end=266 ><a id="Images_265"></a>Images</h4>
+<pre><code class="has-line-data" data-line-start="268" data-line-end="278" class="language-CSS"><span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
+}</span>
+
+<span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="279" data-line-end="280"><a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image">Try on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=285 data-line-end=286 ><a id="Video_285"></a>Video</h4>
+<pre><code class="has-line-data" data-line-start="288" data-line-end="298" class="language-CSS"><span class="hljs-tag">video</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
+}</span>
+
+<span class="hljs-tag">video</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> auto</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="299" data-line-end="300"><a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_video2">Try on w3schools</a></p>

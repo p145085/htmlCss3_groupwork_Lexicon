@@ -1,0 +1,208 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="4HTML__CSS_0"></a>4.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Lists_links_tables__grouping_1"></a>Lists, links, tables &amp; grouping</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="Encoding_6"></a>Encoding</h4>
+<ul>
+<li class="has-line-data" data-line-start="7" data-line-end="8">UTF-8 - Character encoding for Unicode (a standard for representing a great variety of characters from many languages).</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">ISO-8859-1 - Character encoding for the Latin alphabet.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">In theory, any character encoding can be used, but no browser understands all of them.</li>
+<li class="has-line-data" data-line-start="10" data-line-end="12">When using a more wide character encoding the better the chance that a browser will understand it.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="13" data-line-end="20" class="language-HTML"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=25 data-line-end=26 ><a id="Indentation_25"></a>Indentation</h4>
+<ul>
+<li class="has-line-data" data-line-start="26" data-line-end="27">An indentation or indent is an empty space at the beginning of a line.</li>
+<li class="has-line-data" data-line-start="27" data-line-end="28">These are used to signal the start of a new paragraph.</li>
+<li class="has-line-data" data-line-start="28" data-line-end="29">Organizing your code with indentations are very important, this to make the code more readable.</li>
+<li class="has-line-data" data-line-start="29" data-line-end="31">Every new element on a new row.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="32" data-line-end="43" class="language-HTML"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span> <span class="hljs-comment">&lt;!-- intended by 1 tab--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Page Title<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>My First Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span> <span class="hljs-comment">&lt;!-- intended by 2 tabs--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>My first paragraph.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=48 data-line-end=49 ><a id="Messy_indentations_48"></a>Messy indentations</h4>
+<pre><code class="has-line-data" data-line-start="50" data-line-end="61" class="language-HTML"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span> <span class="hljs-comment">&lt;!-- intended by 1 tab--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Page Title<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>My First Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span> <span class="hljs-comment">&lt;!-- intended by 2 tabs--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>My first paragraph.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=66 data-line-end=67 ><a id="Lists_66"></a>Lists</h4>
+<ul>
+<li class="has-line-data" data-line-start="67" data-line-end="68">HTML has elements for lists.</li>
+<li class="has-line-data" data-line-start="68" data-line-end="69">There are 3 different Lists.</li>
+<li class="has-line-data" data-line-start="69" data-line-end="70">Ordered list</li>
+<li class="has-line-data" data-line-start="70" data-line-end="71">Unordered list</li>
+<li class="has-line-data" data-line-start="71" data-line-end="72">Definition list</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=77 data-line-end=78 ><a id="Ordered_List_77"></a>Ordered List</h4>
+<pre><code class="has-line-data" data-line-start="80" data-line-end="87" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Jane Doe<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Panda da panda<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Joy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=90 data-line-end=91 ><a id="Unordered_List_90"></a>Unordered List</h4>
+<pre><code class="has-line-data" data-line-start="93" data-line-end="100" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Jane Doe<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Panda da panda<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Joy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=103 data-line-end=104 ><a id="Definition_List_103"></a>Definition List</h4>
+<pre><code class="has-line-data" data-line-start="106" data-line-end="111" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">dl</span>&gt;</span> <span class="hljs-comment">&lt;!-- element to define a description list --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>kg<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span> <span class="hljs-comment">&lt;!-- element to define the description term --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>Grundenheten för massa i Internationella måttenhetssystemet (SI)<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span> <span class="hljs-comment">&lt;!-- element to describe the term in a description list --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=114 data-line-end=115 ><a id="Nested_lists_114"></a>Nested lists</h4>
+<pre><code class="has-line-data" data-line-start="117" data-line-end="130" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Jane Doe
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Madonna<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>2pac<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Iggy Pop<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Panda da panda<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Joy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=133 data-line-end=134 ><a id="HTML_Links__Hyperlinks_133"></a>HTML Links - Hyperlinks</h4>
+<ul>
+<li class="has-line-data" data-line-start="135" data-line-end="136">Links allow users to click their way from page to page.</li>
+<li class="has-line-data" data-line-start="136" data-line-end="137">Links can link from one website to another.</li>
+<li class="has-line-data" data-line-start="137" data-line-end="138">Links can link from one page to another on the same site.</li>
+<li class="has-line-data" data-line-start="138" data-line-end="139">Links can link from one part of a webpage to another part of the same page.</li>
+<li class="has-line-data" data-line-start="139" data-line-end="140">Links can open new pages in new browser windows.</li>
+<li class="has-line-data" data-line-start="140" data-line-end="141">Links can start a new window to email.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=146 data-line-end=147 ><a id="Link_to_another_website_146"></a>Link to another website</h4>
+<pre><code class="has-line-data" data-line-start="149" data-line-end="152" class="language-HTML"><span class="hljs-comment">&lt;!-- Absolute url --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.blocket.se"</span>&gt;</span>blocket<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=157 data-line-end=158 ><a id="Link_page_on_the_same_site_local_link_157"></a>Link page on the same site (local link)</h4>
+<pre><code class="has-line-data" data-line-start="160" data-line-end="167" class="language-HTML"><span class="hljs-comment">&lt;!-- Relative urls, no domain name (without https://www....) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"index.html"</span>&gt;</span>Start page<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"profile.html"</span>&gt;</span>Profile page<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"contact/contact.html"</span>&gt;</span>Contact page<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=172 data-line-end=173 ><a id="File_structure_172"></a>File structure</h4>
+<p class="has-line-data" data-line-start="173" data-line-end="174">&lt;img  src=&quot;/media/html-css-images/html-css-4/folder.png&quot; alt=“files structure”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=178 data-line-end=179 ><a id="Email_links_178"></a>Email links</h4>
+<pre><code class="has-line-data" data-line-start="181" data-line-end="183" class="language-HTML">  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"mailto:johndoe@example.com"</span>&gt;</span>Email John<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=188 data-line-end=189 ><a id="Open_in_a_new_window_188"></a>Open in a new window</h4>
+<p class="has-line-data" data-line-start="190" data-line-end="191">The target attribute specifies where to open the linked document.</p>
+<pre><code class="has-line-data" data-line-start="193" data-line-end="195" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.blocket.se"</span> <span class="hljs-attribute">target</span>=<span class="hljs-value">"_blank"</span>&gt;</span>Blocket<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=200 data-line-end=201 ><a id="Linking_to_a_specific_part_of_the_same_page_200"></a>Linking to a specific part of the same page</h4>
+<pre><code class="has-line-data" data-line-start="203" data-line-end="209" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"top_of_page"</span>&gt;</span>top<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+..
+..
+..
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#top_of_page"</span> <span class="hljs-attribute">target</span>=<span class="hljs-value">"_blank"</span>&gt;</span>Blocket<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=214 data-line-end=215 ><a id="Tables_214"></a>Tables</h4>
+<h4 class="code-line" data-line-start=215 data-line-end=216 ><a id="Displaying_tabular_data_215"></a>Displaying tabular data</h4>
+<hr>
+<h4 class="code-line" data-line-start=220 data-line-end=221 ><a id="Tables_220"></a>Tables</h4>
+<ul>
+<li class="has-line-data" data-line-start="222" data-line-end="223">Think of a table like a grid.</li>
+<li class="has-line-data" data-line-start="223" data-line-end="224">A table has Rows and Columns.</li>
+<li class="has-line-data" data-line-start="224" data-line-end="225">Each block in the grid is a cell.</li>
+<li class="has-line-data" data-line-start="225" data-line-end="226">Examples of tables are sport results or stock reports.</li>
+<li class="has-line-data" data-line-start="226" data-line-end="227">See &lt;a href=&quot;<a href="http://www.everysport.com/sport/fotboll/fotbollsserier-2019/allsvenskan-herr/allsvenskan/100877">http://www.everysport.com/sport/fotboll/fotbollsserier-2019/allsvenskan-herr/allsvenskan/100877</a>&quot; target=&quot;_blank&quot;&gt;example&lt;/a&gt;</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=232 data-line-end=233 ><a id="Rows_and_Columns_232"></a>Rows and Columns</h4>
+<p class="has-line-data" data-line-start="233" data-line-end="234">&lt;img src=&quot;/media/html-css-images/html-css-4/table2.png&quot; alt=“table structure”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=238 data-line-end=239 ><a id="HTML_Table_238"></a>HTML Table</h4>
+<pre><code class="has-line-data" data-line-start="240" data-line-end="259" class="language-HTML"><span class="hljs-comment">&lt;!-- Basic Table Structure --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span> <span class="hljs-comment">&lt;!-- creates the table --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span> <span class="hljs-comment">&lt;!-- Start of a row --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column1<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span> <span class="hljs-comment">&lt;!-- Cell of that row (table header) --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column2<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span> <span class="hljs-comment">&lt;!-- Cell of that row (table header) --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column3<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span> <span class="hljs-comment">&lt;!-- Cell of that row (table header) --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span> <span class="hljs-comment">&lt;!-- End of a row --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>45<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span> <span class="hljs-comment">&lt;!-- Cell of that row (table data) --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>60<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span> <span class="hljs-comment">&lt;!-- Cell of that row (table data) --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>45<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span> <span class="hljs-comment">&lt;!-- Cell of that row (table data) --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>60<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>90<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>90<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=262 data-line-end=263 ><a id="colspan__rowspan_262"></a>colspan &amp; rowspan</h4>
+<p class="has-line-data" data-line-start="263" data-line-end="264">&lt;img  src=&quot;/media/html-css-images/html-css-4/table.png&quot; alt=“rowspan and colspan”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=268 data-line-end=269 ><a id="colspan__rowspan_268"></a>colspan &amp; rowspan</h4>
+<pre><code class="has-line-data" data-line-start="271" data-line-end="285" class="language-HTML"><span class="hljs-comment">&lt;!-- Basic Table Structure --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span> <span class="hljs-comment">&lt;!-- creates the table --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span> <span class="hljs-comment">&lt;!-- Start of a row --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column1<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column2<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column3<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span> <span class="hljs-comment">&lt;!-- End of a row --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">colspan</span>=<span class="hljs-value">"2"</span>&gt;</span>45<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span> <span class="hljs-comment">&lt;!-- Will be 2 columns wide --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">rowspan</span>=<span class="hljs-value">"4"</span>&gt;</span>60<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span> <span class="hljs-comment">&lt;!-- Will be 4 rows high  --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>45<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=290 data-line-end=291 ><a id="Grouping_with_divs_divisions_290"></a>Grouping with divs (divisions)</h4>
+<ul>
+<li class="has-line-data" data-line-start="291" data-line-end="292">Divs allows you to group elements together.</li>
+<li class="has-line-data" data-line-start="292" data-line-end="294">If you group elements together in a divison it allows you to for example set styles to all the elements in this division.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="295" data-line-end="300" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"top_of_page"</span>&gt;</span>top
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"myImage"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>

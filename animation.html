@@ -1,0 +1,217 @@
+<h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="14HTML__CSS_0"></a>14.HTML - CSS</h2>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Transform_Transition__Animate_1"></a>Transform, Transition &amp; Animate</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="Browsers_have_different_rendering_engines_6"></a>Browsers have different rendering engines</h4>
+<ul>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Chrome - Blink (webkit)</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Safari - Webkit</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Firefox - Gecko</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=16 data-line-end=17 ><a id="Prefixes_16"></a>Prefixes</h4>
+<ul>
+<li class="has-line-data" data-line-start="17" data-line-end="18">-webkit-, -moz- are prefixes that sometimes needs to be specified due to browser compatability</li>
+<li class="has-line-data" data-line-start="18" data-line-end="19">-webkit- = Safari, Chrome (Blink was originally forked from webkit)</li>
+<li class="has-line-data" data-line-start="19" data-line-end="20">-moz- = Mozilla Firefox</li>
+<li class="has-line-data" data-line-start="20" data-line-end="22">-o- = Opera</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="23" data-line-end="27" class="language-CSS"><span class="hljs-comment">/* Use standard and the specified to cover more browsers */</span>
+<span class="hljs-tag">-webkit-transition</span>: <span class="hljs-tag">width</span> 2<span class="hljs-tag">s</span>; <span class="hljs-comment">/* Safari */</span>
+<span class="hljs-tag">transition</span>: <span class="hljs-tag">width</span> 2<span class="hljs-tag">s</span>; <span class="hljs-comment">/* Standard */</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=32 data-line-end=33 ><a id="Transform_32"></a>Transform</h4>
+<ul>
+<li class="has-line-data" data-line-start="34" data-line-end="35">Translate, rotate, scale, and skew elements.</li>
+<li class="has-line-data" data-line-start="35" data-line-end="36">Changing shape, size and position.</li>
+<li class="has-line-data" data-line-start="36" data-line-end="37">CSS supports 2D and 3D transition, we will just check 2D</li>
+<li class="has-line-data" data-line-start="37" data-line-end="38">&lt;a href=&quot;<a href="https://caniuse.com/#search=2d%20transform">https://caniuse.com/#search=2d transform</a>&quot;&gt;CanIUse&lt;/a&gt;</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=43 data-line-end=44 ><a id="Different_transforms_43"></a>Different transforms</h4>
+<ul>
+<li class="has-line-data" data-line-start="45" data-line-end="46">translate( ) = Moves an element from its current position</li>
+<li class="has-line-data" data-line-start="46" data-line-end="47">rotate( ) = Rotates an element clockwise</li>
+<li class="has-line-data" data-line-start="47" data-line-end="48">scale( ) = Increases or decreases the size of an element</li>
+<li class="has-line-data" data-line-start="48" data-line-end="49">skew( ) = Skews an element along the X and Y-axis</li>
+<li class="has-line-data" data-line-start="49" data-line-end="50">matrix( ) = Combines all the 2D transform methods into one</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=55 data-line-end=56 ><a id="Transform_rotate_example_55"></a>Transform rotate example</h4>
+<ul>
+<li class="has-line-data" data-line-start="56" data-line-end="57">rotate( ) is a what we call a method</li>
+<li class="has-line-data" data-line-start="57" data-line-end="58">rotate(20deg) 20deg is a parameter that we pass into the method</li>
+<li class="has-line-data" data-line-start="58" data-line-end="60">this will rotate the element 20deg clockwise</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="61" data-line-end="67" class="language-CSS"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">-ms-transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate</span>(<span class="hljs-number">20deg</span>)</span></span>; <span class="hljs-comment">/* IE 9 */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">-webkit-transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate</span>(<span class="hljs-number">20deg</span>)</span></span>; <span class="hljs-comment">/* Safari */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate</span>(<span class="hljs-number">20deg</span>)</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="67" data-line-end="68"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotate">Try on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=73 data-line-end=74 ><a id="2D_tranform_examples_at_a_hrefhttpswwww3schoolscomcsscss3_2dtransformsasp_target_blankw3schoolsa_73"></a>2D tranform examples at &lt;a href=&quot;<a href="https://www.w3schools.com/css/css3_2dtransforms.asp">https://www.w3schools.com/css/css3_2dtransforms.asp</a>&quot; target=&quot;_blank&quot;&gt;w3schools&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=78 data-line-end=79 ><a id="CSS_Transitions_78"></a>CSS Transitions</h4>
+<ul>
+<li class="has-line-data" data-line-start="80" data-line-end="81">Transitions allows you to change property values smoothly</li>
+<li class="has-line-data" data-line-start="81" data-line-end="82">Transition from one value to another over a given duration.</li>
+<li class="has-line-data" data-line-start="82" data-line-end="83">You MUST to specify the &lt;b&gt;CSS property&lt;/b&gt; you want to add an effect to and the &lt;b&gt;duration&lt;/b&gt; of the effect</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=88 data-line-end=89 ><a id="CSS_Transition_88"></a>CSS Transition</h4>
+<ul>
+<li class="has-line-data" data-line-start="89" data-line-end="90"><strong><em>width</em></strong> is the <strong><em>CSS property</em></strong></li>
+<li class="has-line-data" data-line-start="90" data-line-end="91"><strong><em>3s</em></strong> is the <strong><em>duration</em></strong></li>
+<li class="has-line-data" data-line-start="91" data-line-end="93">When the pointer hovers over the div the width of it transitions from 100 to 300px over 3 seconds.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="94" data-line-end="103" class="language-CSS"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> width <span class="hljs-number">3s</span></span></span>;
+}</span>
+
+<span class="hljs-tag">div</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">300px</span></span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="103" data-line-end="104"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition1">Try on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=109 data-line-end=110 ><a id="CSS_Transition_multiple_properties_109"></a>CSS Transition multiple properties</h4>
+<pre><code class="has-line-data" data-line-start="112" data-line-end="116" class="language-CSS"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> width <span class="hljs-number">2s</span>, height <span class="hljs-number">4s</span>, background <span class="hljs-number">3s</span></span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=121 data-line-end=122 ><a id="CSS_Transition_all_properties_121"></a>CSS Transition all properties</h4>
+<pre><code class="has-line-data" data-line-start="124" data-line-end="128" class="language-CSS"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> all <span class="hljs-number">1s</span></span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=133 data-line-end=134 ><a id="Speed_curve_133"></a>Speed curve</h4>
+<ul>
+<li class="has-line-data" data-line-start="134" data-line-end="135">
+<p class="has-line-data" data-line-start="134" data-line-end="135">Using curves gives a more natural feeling.</p>
+</li>
+<li class="has-line-data" data-line-start="135" data-line-end="143">
+<p class="has-line-data" data-line-start="135" data-line-end="136">Image a bouncing ball, it moves slower the higher in the bounce the ball is.</p>
+<pre><code class="has-line-data" data-line-start="138" data-line-end="142" class="language-CSS"><span class="hljs-id">#myDiv</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition-timing-function</span>:<span class="hljs-value"> ease-in-out</span></span>; <span class="hljs-comment">/* specifies a transition effect with a slow start and end */</span>
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="142" data-line-end="143"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed">Try on w3schools</a></p>
+</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=148 data-line-end=149 ><a id="Delaying_the_transition_148"></a>Delaying the transition</h4>
+<ul>
+<li class="has-line-data" data-line-start="149" data-line-end="150">
+<p class="has-line-data" data-line-start="149" data-line-end="150">1 second until the transition starts</p>
+</li>
+<li class="has-line-data" data-line-start="150" data-line-end="158">
+<p class="has-line-data" data-line-start="150" data-line-end="151">The transition lasts for 3 seconds</p>
+<pre><code class="has-line-data" data-line-start="153" data-line-end="158" class="language-CSS"><span class="hljs-id">#myDiv</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> width <span class="hljs-number">3s</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-delay</span>:<span class="hljs-value"> <span class="hljs-number">1s</span></span></span>;
+}</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=163 data-line-end=164 ><a id="Adding_Transforms_and_other_ways_of_writing_it_163"></a>Adding Transforms and other ways of writing it.</h4>
+<pre><code class="has-line-data" data-line-start="166" data-line-end="182" class="language-CSS"><span class="hljs-id">#myDiv</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> width <span class="hljs-number">2s</span>, height <span class="hljs-number">2s</span>, transform <span class="hljs-number">2s</span></span></span>;
+}</span>
+
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition-property</span>:<span class="hljs-value"> width</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-duration</span>:<span class="hljs-value"> <span class="hljs-number">2s</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-timing-function</span>:<span class="hljs-value"> linear</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transition-delay</span>:<span class="hljs-value"> <span class="hljs-number">1s</span></span></span>;
+}</span>
+
+<span class="hljs-tag">myClass</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">transition</span>:<span class="hljs-value"> width <span class="hljs-number">2s</span> linear <span class="hljs-number">1s</span></span></span>;
+}</span>
+
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=187 data-line-end=188 ><a id="CSS_animations_187"></a>CSS animations</h4>
+<ul>
+<li class="has-line-data" data-line-start="189" data-line-end="190">CSS animations are alternatives to animating using JavaScript.</li>
+<li class="has-line-data" data-line-start="190" data-line-end="191">It works on most elements.</li>
+<li class="has-line-data" data-line-start="191" data-line-end="192">&lt;a href=&quot;<a href="https://caniuse.com/#search=css%20animations">https://caniuse.com/#search=css animations</a>&quot;&gt;CanIUse&lt;/a&gt;</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=197 data-line-end=198 ><a id="What_is_an_animation_197"></a>What is an animation?</h4>
+<ul>
+<li class="has-line-data" data-line-start="199" data-line-end="200">An animation lets an element gradually change from one style to another.</li>
+<li class="has-line-data" data-line-start="200" data-line-end="201">No limits to how many CSS properties or how many times.</li>
+<li class="has-line-data" data-line-start="201" data-line-end="202">You need to specify keyframes for the animation.</li>
+<li class="has-line-data" data-line-start="202" data-line-end="203">Keyframes hold what styles the element will have at certain times.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=208 data-line-end=209 ><a id="Animation_from__to_example_208"></a>Animation from -&gt; to example</h4>
+<pre><code class="has-line-data" data-line-start="211" data-line-end="226" class="language-CSS"><span class="hljs-comment">/* The animation code */</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> example </span>{
+  <span class="hljs-tag">from</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;}</span> <span class="hljs-comment">/* from = 0% */</span>
+  <span class="hljs-tag">to</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> yellow</span></span>;}</span> <span class="hljs-comment">/* to = 100% */</span>
+}
+
+<span class="hljs-comment">/* The element to apply the animation to */</span>
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-name</span>:<span class="hljs-value"> example</span></span>; <span class="hljs-comment">/* refers to @keyframes example above */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">animation-duration</span>:<span class="hljs-value"> <span class="hljs-number">4s</span></span></span>; <span class="hljs-comment">/* is 0 by default and no animation */</span>
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="226" data-line-end="227"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1">Try on w3scools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=232 data-line-end=233 ><a id="More_complex_animation_232"></a>More complex animation</h4>
+<ul>
+<li class="has-line-data" data-line-start="234" data-line-end="235">Animating multiple styles</li>
+<li class="has-line-data" data-line-start="235" data-line-end="237">Delay 2 seconds before animation starts</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="238" data-line-end="256" class="language-CSS"><span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> example </span>{
+  0%   <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">red</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>;}</span>
+  25%  <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">yellow</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">200px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>;}</span>
+  50%  <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">blue</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">200px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">200px</span></span></span>;}</span>
+  75%  <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">green</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">200px</span></span></span>;}</span>
+  100% <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">red</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>;}</span>
+}
+
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-name</span>:<span class="hljs-value"> example</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-duration</span>:<span class="hljs-value"> <span class="hljs-number">4s</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-delay</span>:<span class="hljs-value"> <span class="hljs-number">2s</span></span></span>; <span class="hljs-comment">/* delay before animation starts */</span>
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="256" data-line-end="257"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2">Try on w3scools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=262 data-line-end=263 ><a id="More_complex_animation_262"></a>More complex animation</h4>
+<pre><code class="has-line-data" data-line-start="265" data-line-end="283" class="language-CSS"><span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> example </span>{
+  <span class="hljs-tag">from</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">red</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">0px</span></span></span>;}</span>
+  <span class="hljs-tag">to</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value">blue</span></span>; <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">200px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"><span class="hljs-number">200px</span></span></span>;}</span>
+}
+
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-name</span>:<span class="hljs-value"> example</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-duration</span>:<span class="hljs-value"> <span class="hljs-number">4s</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">animation-delay</span>:<span class="hljs-value"> <span class="hljs-number">2s</span></span></span>; <span class="hljs-comment">/* delay before animation starts */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">animation-iteration-count</span>:<span class="hljs-value"> <span class="hljs-number">3</span></span></span>; <span class="hljs-comment">/* Animation will run 3 times, could be set to inifinite */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">animation-direction</span>:<span class="hljs-value"> alternate</span></span>; <span class="hljs-comment">/* normal, reverse, alternate, alternate-revers */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">animation-timing-function</span>:<span class="hljs-value"> ease-in-out</span></span>; <span class="hljs-comment">/* ease(default), linear, ease-in, ease-out, ease-in-out, cubic-bezier */</span>
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="283" data-line-end="284"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed">Try on w3scools</a></p>

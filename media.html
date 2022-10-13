@@ -1,0 +1,90 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="5HTML__CSS_0"></a>5.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Media_images_audio__video_1"></a>Media (images, audio &amp; video)</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="Directory_structure_example_6"></a>Directory structure example</h4>
+<p class="has-line-data" data-line-start="7" data-line-end="8">&lt;img  src=&quot;/media/html-css-images/html-css-5/folder2.png&quot; alt=“folder structure”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=12 data-line-end=13 ><a id="Images_12"></a>Images</h4>
+<ul>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Images can be used to lift your site, but bad usage might make it look worse.</li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">When using images in your webpages always consider why you use your images.</li>
+<li class="has-line-data" data-line-start="16" data-line-end="17">Also where to get and store photos/images? Are they stored on a server you own, in the cloud or elsewhere?</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=22 data-line-end=23 ><a id="Formats_22"></a>Formats</h4>
+<ul>
+<li class="has-line-data" data-line-start="24" data-line-end="25">JPEG, GIF, PNG &amp; SVG are image formats often used on the web.</li>
+<li class="has-line-data" data-line-start="25" data-line-end="26">Setting the size of images can be done using different units (px, pt, em, cm, mm).</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=31 data-line-end=32 ><a id="Image_sizes_31"></a>Image sizes</h4>
+<ul>
+<li class="has-line-data" data-line-start="33" data-line-end="34">If the image is to small i can be stretched or pixelated.</li>
+<li class="has-line-data" data-line-start="34" data-line-end="35">If the image is to big it takes a long time to load.</li>
+<li class="has-line-data" data-line-start="35" data-line-end="36">Test examples (chapter 5).</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=41 data-line-end=42 ><a id="HTML_Image_41"></a>HTML Image</h4>
+<ul>
+<li class="has-line-data" data-line-start="43" data-line-end="44"><code>&lt;img&gt;</code> is the element for images.</li>
+<li class="has-line-data" data-line-start="44" data-line-end="45">The src attribute tells the browser where to find the image.</li>
+<li class="has-line-data" data-line-start="45" data-line-end="46">The alt attribute describes the image if you can’t see it.</li>
+<li class="has-line-data" data-line-start="46" data-line-end="47">Screen readers which reads the webpage out loud will read the alt text.</li>
+<li class="has-line-data" data-line-start="47" data-line-end="49">The alt text will also be displayed if the image failed loading.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="50" data-line-end="53" class="language-HTML"><span class="hljs-comment">&lt;!-- using the img tag --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"images/quokka.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Quokka"</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=58 data-line-end=59 ><a id="HTML_Image_example_58"></a>HTML Image example</h4>
+<pre><code class="has-line-data" data-line-start="61" data-line-end="69" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">img</span>
+  <span class="hljs-attribute">title</span>=<span class="hljs-value">"Squirrel"</span>
+  <span class="hljs-attribute">width</span>=<span class="hljs-value">"400"</span>
+  <span class="hljs-attribute">height</span>=<span class="hljs-value">"300"</span>
+  <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg"</span>
+  <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Squirrel"</span>
+&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=72 data-line-end=73 ><a id="Placing_an_image_72"></a>Placing an image</h4>
+<ul>
+<li class="has-line-data" data-line-start="74" data-line-end="75">The image will behave differently depending on where you place it (inside different elements).</li>
+<li class="has-line-data" data-line-start="75" data-line-end="76">It can be controlled using the align attribute.</li>
+<li class="has-line-data" data-line-start="76" data-line-end="77">See examples (chapter 5)</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=82 data-line-end=83 ><a id="Media_formats_82"></a>Media formats</h4>
+<p class="has-line-data" data-line-start="83" data-line-end="84">&lt;a href=&quot;<a href="https://www.w3schools.com/html/html_media.asp">https://www.w3schools.com/html/html_media.asp</a>&quot;&gt;List with file formats&lt;/a&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=88 data-line-end=89 ><a id="HTML_Audio_88"></a>HTML Audio</h4>
+<pre><code class="has-line-data" data-line-start="91" data-line-end="95" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"audio/test-audio.ogg"</span> <span class="hljs-attribute">controls</span> <span class="hljs-attribute">autoplay</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This browser does not support our audio format.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span>
+</code></pre>
+<pre><code class="has-line-data" data-line-start="97" data-line-end="103" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"horse.ogg"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"audio/ogg"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"horse.mp3"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"audio/mpeg"</span>&gt;</span>
+  Your browser does not support the audio element.
+<span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span>
+</code></pre>
+<p class="has-line-data" data-line-start="103" data-line-end="104"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all">Try on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=109 data-line-end=110 ><a id="Some_browsers_does_not_allow_for_autoplay_when_there_is_sound_For_good_reasons_109"></a>Some browsers does not allow for autoplay when there is sound. For good reasons.</h4>
+<h4 class="code-line" data-line-start=110 data-line-end=111 ><a id="To_make_autoplay_work_add_a_hrefhttpswwww3schoolscomtagsatt_video_mutedaspmuteda_110"></a>To make autoplay work add &lt;a href=&quot;<a href="https://www.w3schools.com/tags/att_video_muted.asp">https://www.w3schools.com/tags/att_video_muted.asp</a>&quot;&gt;muted&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=115 data-line-end=116 ><a id="HTML_Video_115"></a>HTML Video</h4>
+<pre><code class="has-line-data" data-line-start="118" data-line-end="126" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">video</span>
+  <span class="hljs-attribute">src</span>=<span class="hljs-value">"video/puppy.mp4"</span>
+  <span class="hljs-attribute">poster</span>=<span class="hljs-value">"images/puppy.jpg"</span>
+  <span class="hljs-attribute">width</span>=<span class="hljs-value">"400"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"300"</span>
+  <span class="hljs-attribute">preload</span> <span class="hljs-attribute">controls</span> <span class="hljs-attribute">loop</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>A video of a puppy playing in the snow<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span>
+</code></pre>
+<pre><code class="has-line-data" data-line-start="128" data-line-end="134" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"400"</span> <span class="hljs-attribute">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"mov_bbb.mp4"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"video/mp4"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"mov_bbb.ogg"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"video/ogg"</span>&gt;</span>
+  Your browser does not support HTML5 video.
+<span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span>
+</code></pre>
+<p class="has-line-data" data-line-start="134" data-line-end="135"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_autoplay">Try on w3schools</a></p>

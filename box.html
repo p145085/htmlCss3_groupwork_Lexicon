@@ -1,0 +1,356 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="7HTML__CSS_0"></a>7.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Box_Model_colors__text_1"></a>Box Model, colors &amp; text</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="The_box_Model_6"></a>The box Model</h4>
+<p class="has-line-data" data-line-start="7" data-line-end="8">&lt;img width=“700” src=&quot;/media/html-css-images/html-css-7/marginpadding.png&quot; alt=“CSS margins and paddings”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=12 data-line-end=13 ><a id="Box_Model_12"></a>Box Model</h4>
+<ul>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Content - where text and images appear.</li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">Padding - Clears an area around the content (transparent).</li>
+<li class="has-line-data" data-line-start="16" data-line-end="17">Border - A border that goes around the padding and content.</li>
+<li class="has-line-data" data-line-start="17" data-line-end="18">Margin - Clears an area outside the border (transparent).</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=23 data-line-end=24 ><a id="Element_width__height_23"></a>Element width &amp; height</h4>
+<ul>
+<li class="has-line-data" data-line-start="25" data-line-end="26">These attributes specifies the width and the height of the element’s content area.</li>
+<li class="has-line-data" data-line-start="26" data-line-end="28">It is whats inside the padding, border, and margin of an element.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="29" data-line-end="35" class="language-CSS"><span class="hljs-comment">/* element with id box will be 300*200 pixels */</span>
+<span class="hljs-id">#box</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">300px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">250px</span></span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=40 data-line-end=41 ><a id="Minimum__Maximum_width__height_40"></a>Minimum &amp; Maximum width &amp; height</h4>
+<ul>
+<li class="has-line-data" data-line-start="42" data-line-end="43">It defines the smallest or biggest size an element can have.</li>
+<li class="has-line-data" data-line-start="43" data-line-end="45">This is good for when the screen size is dynamic.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="46" data-line-end="56" class="language-CSS"><span class="hljs-comment">/* The width of the element with id="box" will always be at least 300px  */</span>
+<span class="hljs-id">#box</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">min-width</span>:<span class="hljs-value"> <span class="hljs-number">300px</span></span></span>;
+}</span>
+
+<span class="hljs-comment">/* The width of the element with id="content" never be wider than 300px  */</span>
+<span class="hljs-id">#content</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">300px</span></span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="56" data-line-end="57">&lt;a href=&quot;<a href="http://htmlandcssbook.com/code-samples/chapter-13/min-width-max-width.html">http://htmlandcssbook.com/code-samples/chapter-13/min-width-max-width.html</a>&quot; target=&quot;_blank&quot;&gt;Handbook examples&lt;/a&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=62 data-line-end=63 ><a id="Margin__Padding_62"></a>Margin &amp; Padding</h4>
+<ul>
+<li class="has-line-data" data-line-start="64" data-line-end="65">&lt;b&gt;Margin&lt;/b&gt; properties are used to create space around elements, &lt;b&gt;OUTSIDE&lt;/b&gt; of any defined borders.</li>
+<li class="has-line-data" data-line-start="65" data-line-end="66">&lt;b&gt;Padding&lt;/b&gt; properties are used to generate space around an element’s content, &lt;b&gt;INSIDE&lt;/b&gt; of any defined borders.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=71 data-line-end=72 ><a id="Margin_71"></a>Margin</h4>
+<pre><code class="has-line-data" data-line-start="74" data-line-end="95" class="language-CSS"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+}</span>
+
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">30px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">80px</span></span></span>;
+}</span>
+
+<span class="hljs-comment">/*top 25px, right and left 50px, bottom 75px */</span>
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">25px</span> <span class="hljs-number">50px</span> <span class="hljs-number">75px</span></span></span>;
+}</span>
+
+<span class="hljs-comment">/* Auto to horizontally center the element within its container. */</span>
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> auto</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="96" data-line-end="97"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=102 data-line-end=103 ><a id="When_does_margin_auto_work_102"></a>When does <code>margin: auto;</code> work?</h4>
+<ul>
+<li class="has-line-data" data-line-start="104" data-line-end="105">The element must be block-level (display: block or display: table).</li>
+<li class="has-line-data" data-line-start="105" data-line-end="106">The element must not float.</li>
+<li class="has-line-data" data-line-start="106" data-line-end="107">The element must not have a fixed or absolute position (unless it is also set to <code>left: 0; right: 0;</code>).</li>
+<li class="has-line-data" data-line-start="107" data-line-end="108">The element must have a width that is not auto.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=114 data-line-end=115 ><a id="Padding_114"></a>Padding</h4>
+<pre><code class="has-line-data" data-line-start="117" data-line-end="133" class="language-CSS"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+}</span>
+
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding-top</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value"> <span class="hljs-number">30px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value"> <span class="hljs-number">80px</span></span></span>;
+}</span>
+
+<span class="hljs-comment">/*top 25px, right and left 50px, bottom 75px */</span>
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">25px</span> <span class="hljs-number">50px</span> <span class="hljs-number">75px</span></span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="134" data-line-end="135"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=140 data-line-end=141 ><a id="Padding_and_element_width_140"></a>Padding and element width</h4>
+<pre><code class="has-line-data" data-line-start="143" data-line-end="149" class="language-CSS"><span class="hljs-comment">/* This div will be 350px wide since we add padding */</span>
+<span class="hljs-tag">div</span><span class="hljs-class">.box</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">300px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">25px</span></span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="150" data-line-end="151"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=156 data-line-end=157 ><a id="Borders_156"></a>Borders</h4>
+<pre><code class="has-line-data" data-line-start="159" data-line-end="165" class="language-CSS"><span class="hljs-tag">p</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> solid green</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-left</span>:<span class="hljs-value"> <span class="hljs-number">6px</span> solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> lightgrey</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="166" data-line-end="167"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_left">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=172 data-line-end=173 ><a id="Overflowing_content_172"></a>Overflowing content</h4>
+<ul>
+<li class="has-line-data" data-line-start="174" data-line-end="176">If the content does not fit in the box you can choose how overflowing content is displayed</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="177" data-line-end="188" class="language-CSS"><span class="hljs-comment">/* Hides any extra content */</span>
+<span class="hljs-id">#myBox</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
+}</span>
+
+
+<span class="hljs-comment">/* Adds a scrollbar to see extra content */</span>
+<span class="hljs-class">.myBoxes</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> scroll</span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=193 data-line-end=194 ><a id="borderbox_193"></a>border-box</h4>
+<ul>
+<li class="has-line-data" data-line-start="195" data-line-end="197">Setting box-sizing to border-box includes padding and borders in the element’s total width and height</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="198" data-line-end="202" class="language-CSS"><span class="hljs-id">#example1</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="202" data-line-end="203"><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-sizing">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=208 data-line-end=209 ><a id="Setting_colors_208"></a>Setting colors</h4>
+<ul>
+<li class="has-line-data" data-line-start="210" data-line-end="212">Colors can be set using different types of values</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="213" data-line-end="228" class="language-CSS"><span class="hljs-comment">/* predefined color name */</span>
+<span class="hljs-tag">body</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> powderblue</span></span>; }</span>
+
+<span class="hljs-comment">/* RGB (Red, Green, Blue) */</span>
+<span class="hljs-tag">h3</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-function">rgb</span>(<span class="hljs-number">102</span>,<span class="hljs-number">205</span>,<span class="hljs-number">170</span>)</span></span>; }</span>
+
+<span class="hljs-comment">/* RGBA (Red, Green, Blue, Alpha)*/</span>
+<span class="hljs-tag">p</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">99</span>, <span class="hljs-number">71</span>, <span class="hljs-number">0.2</span>)</span></span>; }</span>
+
+<span class="hljs-comment">/* Hexadecimal code values (66 = 102, cd = 205, aa = 170) */</span>
+<span class="hljs-id">#myDiv</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#66cdaa</span></span></span>; }</span>
+
+<span class="hljs-comment">/* HSLA (Hue, Saturation, Lightning, Alpha)*/</span>
+<span class="hljs-class">.myClass</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">hsl</span>(<span class="hljs-number">147</span>, <span class="hljs-number">50%</span>, <span class="hljs-number">47%</span>, <span class="hljs-number">0.4</span>)</span></span>;}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="229" data-line-end="230"><a href="https://www.w3schools.com/css/css_colors.asp">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=235 data-line-end=236 ><a id="Opacity_235"></a>Opacity</h4>
+<ul>
+<li class="has-line-data" data-line-start="236" data-line-end="238">Opacity decides the level of transparency</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="239" data-line-end="250" class="language-CSS"><span class="hljs-comment">/* using opacity property */</span>
+<span class="hljs-tag">h3</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-function">rgb</span>(<span class="hljs-number">255</span>, <span class="hljs-number">99</span>, <span class="hljs-number">71</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> <span class="hljs-number">0.5</span></span></span>;
+}</span>
+
+<span class="hljs-comment">/* Using rgba, same result as above */</span>
+<span class="hljs-tag">h2</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-function">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">99</span>, <span class="hljs-number">71</span>, .<span class="hljs-number">5</span>)</span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=255 data-line-end=256 ><a id="Backgrounds_255"></a>Backgrounds</h4>
+<ul>
+<li class="has-line-data" data-line-start="257" data-line-end="258">All elements have backgrounds.</li>
+<li class="has-line-data" data-line-start="258" data-line-end="260">To these background you add colors or images</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="261" data-line-end="271" class="language-CSS"><span class="hljs-tag">body</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">"img_tree.png"</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-repeat</span>:<span class="hljs-value"> no-repeat</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> right top</span></span>;
+}</span>
+
+<span class="hljs-tag">h4</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="272" data-line-end="273"><a href="https://www.w3schools.com/css/css_background.asp">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=278 data-line-end=279 ><a id="Background_vs_backgroundcolor_278"></a>Background vs background-color</h4>
+<ul>
+<li class="has-line-data" data-line-start="280" data-line-end="281">Background will supercede all previous background-color, background-image, background-position etc.</li>
+<li class="has-line-data" data-line-start="281" data-line-end="283">It’s a shorthand, but a reset as well.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="284" data-line-end="294" class="language-CSS"><span class="hljs-comment">/* sets bakground-color, background-image, background-position on one line */</span>
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> white <span class="hljs-function">url</span>(<span class="hljs-string">"img_tree.png"</span>) right top no-repeat</span></span>;
+}</span>
+
+<span class="hljs-comment">/* resets all values set above */</span>
+<span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="295" data-line-end="296"><a href="https://www.w3schools.com/css/css_background.asp">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=301 data-line-end=302 ><a id="Text_301"></a>Text</h4>
+<ul>
+<li class="has-line-data" data-line-start="303" data-line-end="305">Text elements - paragraphs, h1-h6 have specific text attributes.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="306" data-line-end="313" class="language-CSS"><span class="hljs-tag">p</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff00ff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> underline</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-transform</span>:<span class="hljs-value"> uppercase</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="314" data-line-end="315"><a href="https://www.w3schools.com/css/css_text.asp">All text properties at w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=320 data-line-end=321 ><a id="Fonts_320"></a>Fonts</h4>
+<ul>
+<li class="has-line-data" data-line-start="322" data-line-end="323">A font is a graphical representation of text.</li>
+<li class="has-line-data" data-line-start="323" data-line-end="324">There are specific and generic Fonts.</li>
+<li class="has-line-data" data-line-start="324" data-line-end="326">“Times New Roman” is specific font and “serif” is general.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="327" data-line-end="335" class="language-CSS"><span class="hljs-comment">/* If Times New Roman is not stored on the users computer it falls back on Times then serif */</span>
+<span class="hljs-tag">p</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">"Times New Roman"</span>, Times, serif</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-style</span>:<span class="hljs-value"> italic</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">40px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="336" data-line-end="337"><a href="https://www.w3schools.com/css/css_font.asp">All text properties at w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=342 data-line-end=343 ><a id="Using_fonts_from_external_sources_342"></a>Using fonts from external sources</h4>
+<ul>
+<li class="has-line-data" data-line-start="344" data-line-end="345">Fonts which are not stored on the users computer.</li>
+<li class="has-line-data" data-line-start="345" data-line-end="347"><a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+</ul>
+<pre><code class="has-line-data" data-line-start="348" data-line-end="358" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Altenative 1--&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://fonts.googleapis.com/css?family=Indie+Flower&amp;display=swap"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Altenative 2--&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
+    <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url</span>(<span class="hljs-string">'https://fonts.googleapis.com/css?family=Indie+Flower&amp;display=swap'</span>)</span>;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+</code></pre>
+<pre><code class="has-line-data" data-line-start="360" data-line-end="364" class="language-CSS"><span class="hljs-tag">p</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'Indie Flower'</span>, cursive</span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=369 data-line-end=370 ><a id="Font_formats_369"></a>Font formats</h4>
+<ul>
+<li class="has-line-data" data-line-start="371" data-line-end="372">Fonts are stored using different formats.</li>
+<li class="has-line-data" data-line-start="372" data-line-end="373">All browsers does &lt;b&gt;NOT&lt;/b&gt; support all formats.</li>
+<li class="has-line-data" data-line-start="373" data-line-end="374">&lt;a href=&quot;<a href="https://transfonter.org/formats">https://transfonter.org/formats</a>&quot;&gt;List of formats and browser support&lt;/a&gt;</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=379 data-line-end=380 ><a id="Creating_and_using_a_local_webfont_379"></a>Creating and using a local webfont</h4>
+<ul>
+<li class="has-line-data" data-line-start="381" data-line-end="382">Upload your font and convert it on for example <a href="https://transfonter.org/">https://transfonter.org</a></li>
+<li class="has-line-data" data-line-start="382" data-line-end="383">Add the generated folder to you project.</li>
+<li class="has-line-data" data-line-start="383" data-line-end="385">Use CSS @font-face to use it in your project.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="386" data-line-end="400" class="language-CSS"><span class="hljs-at_rule">@<span class="hljs-keyword">font-face</span></span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'Indie Flower'</span></span></span>;
+  <span class="hljs-comment">/* Path to where the font is stored. */</span>
+  <span class="hljs-comment">/* Could be an local or external path.*/</span>
+  <span class="hljs-rule"><span class="hljs-attribute">src</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'myFont/IndieFlower.woff2'</span>) <span class="hljs-function">format</span>(<span class="hljs-string">'woff2'</span>),
+      <span class="hljs-function">url</span>(<span class="hljs-string">'myFont/IndieFlower.woff'</span>) <span class="hljs-function">format</span>(<span class="hljs-string">'woff'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> normal</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-style</span>:<span class="hljs-value"> normal</span></span>;
+}</span>
+
+<span class="hljs-id">#myParagraph</span><span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'Indie Flower'</span>, cursive</span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=405 data-line-end=406 ><a id="a_hrefhttpswwww3schoolscomcsscss_fontasp_target_blankDifference_Between_Serif_and_Sansserif_Fontsa_405"></a>&lt;a href=&quot;<a href="https://www.w3schools.com/css/css_font.asp">https://www.w3schools.com/css/css_font.asp</a>&quot; target=&quot;_blank&quot;&gt;Difference Between Serif and Sans-serif Fonts&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=410 data-line-end=411 ><a id="Link_styles_410"></a>Link styles</h4>
+<ul>
+<li class="has-line-data" data-line-start="411" data-line-end="412">Depending on what state a link is in it can have different styling.</li>
+<li class="has-line-data" data-line-start="412" data-line-end="413">This styling is done using something called psuedo class, which we will cover deeper later on in the course.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=418 data-line-end=419 ><a id="Link_styles_418"></a>Link styles</h4>
+<pre><code class="has-line-data" data-line-start="421" data-line-end="443" class="language-CSS"><span class="hljs-comment">/* unvisited link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:link</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+
+<span class="hljs-comment">/* visited link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:visited</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> green</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
+}</span>
+
+<span class="hljs-comment">/* mouse over link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> hotpink</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> underline</span></span>;
+}</span>
+
+<span class="hljs-comment">/* selected link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:active</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> blue</span></span>;
+}</span>
+</code></pre>
+
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="9HTML__CSS_0"></a>9.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Layouts_with_Flexbox__Grid_1"></a>Layouts with Flexbox &amp; Grid</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="Flexbox_6"></a>Flexbox</h4>
+<ul>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Flexbox is an efficient way to lay out, align and distribute space among items in a <strong>container</strong>.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Is used when items/elements size is unknown and/or dynamic (flexible).</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Is a 1-dimensional system.</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12"><strong>Flexbox</strong> layout is most appropriate to the components of an application, and small-scale layouts.</li>
+<li class="has-line-data" data-line-start="12" data-line-end="13"><strong>Grid</strong> layout is intended for larger scale layouts.</li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">&lt;a href=&quot;<a href="https://caniuse.com/#search=flexbox">https://caniuse.com/#search=flexbox</a>&quot; target=&quot;_blank&quot;&gt;Browser support&lt;/a&gt;.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=19 data-line-end=20 ><a id="a_hrefhttpscsstrickscomsnippetscssaguidetoflexbox_target_blankCSSTricks_Flexbox_Guidea_19"></a>&lt;a href=&quot;<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>&quot; target=&quot;_blank&quot;&gt;CSS-Tricks Flexbox Guide&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=24 data-line-end=25 ><a id="a_hrefhttpstheechoplexnetflexyboxesFlexbox_Playgrounda_24"></a>&lt;a href=&quot;<a href="https://the-echoplex.net/flexyboxes/">https://the-echoplex.net/flexyboxes/</a>&quot;&gt;Flexbox Playground&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=29 data-line-end=30 ><a id="a_hrefhttpsflexboxfroggycomsv_target_blankLearning_Flexbox_flexboxfroggycoma_29"></a>&lt;a href=&quot;<a href="https://flexboxfroggy.com/#sv">https://flexboxfroggy.com/#sv</a>&quot; target=&quot;_blank&quot;&gt;Learning Flexbox (<a href="http://flexboxfroggy.com">flexboxfroggy.com</a>)&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=34 data-line-end=35 ><a id="CSS_Grid_layout_34"></a>CSS Grid layout</h4>
+<ul>
+<li class="has-line-data" data-line-start="36" data-line-end="37">Is the most powerful layout system available in CSS…</li>
+<li class="has-line-data" data-line-start="37" data-line-end="38">2-dimensional system (columns and rows).</li>
+<li class="has-line-data" data-line-start="38" data-line-end="39">Consists of a Parent element (Grid Container) and children (Grid Items).</li>
+<li class="has-line-data" data-line-start="39" data-line-end="40">&lt;a href=&quot;<a href="https://caniuse.com/#feat=css-grid">https://caniuse.com/#feat=css-grid</a>&quot; target=&quot;_blank&quot;&gt;Browser support&lt;/a&gt;.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=45 data-line-end=46 ><a id="a_hrefhttpscsstrickscomsnippetscsscompleteguidegrid_target_blankCSSTricks_CSS_Grid_Guidea_45"></a>&lt;a href=&quot;<a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>&quot; target=&quot;_blank&quot;&gt;CSS-Tricks CSS Grid Guide&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=50 data-line-end=51 ><a id="a_hrefhttpsmozilladevelopersgithubioplaygroundcssgridMozilla_Grid_Playgrounda_50"></a>&lt;a href=&quot;<a href="https://mozilladevelopers.github.io/playground/css-grid">https://mozilladevelopers.github.io/playground/css-grid</a>&quot;&gt;Mozilla Grid Playground&lt;/a&gt;</h4>
+<hr>
+<h4 class="code-line" data-line-start=55 data-line-end=56 ><a id="a_hrefhttpscssgridgardencomsv_target_blankPracticing_CSS_grid_cssgridgardencoma_55"></a>&lt;a href=&quot;<a href="https://cssgridgarden.com/#sv">https://cssgridgarden.com/#sv</a>&quot; target=&quot;_blank&quot;&gt;Practicing CSS grid (<a href="http://cssgridgarden.com">cssgridgarden.com</a>)&lt;/a&gt;</h4>

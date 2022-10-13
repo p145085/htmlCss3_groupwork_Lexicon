@@ -1,0 +1,163 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="10HTML__CSS_0"></a>10.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Forms_1"></a>Forms</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="HTML_Forms_6"></a>HTML Forms</h4>
+<ul>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Forms are a way to collect data/input from users (Register, login, search etc.)</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">An HTML form consists of form controls, which are different ways to collect information.</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Form elements are different types of input elements.</li>
+<li class="has-line-data" data-line-start="11" data-line-end="17">Form element examples:
+<ul>
+<li class="has-line-data" data-line-start="12" data-line-end="13">Text fields</li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">Checkboxes</li>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Radio buttons</li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">Submit buttons</li>
+<li class="has-line-data" data-line-start="16" data-line-end="17">etc.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="code-line" data-line-start=23 data-line-end=24 ><a id="HTML_Forms_23"></a>HTML Forms</h3>
+<p class="has-line-data" data-line-start="24" data-line-end="25">&lt;img  src=&quot;/media/html-css-images/html-css-10/form.png&quot; alt=“How a HTML form is sent”&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=29 data-line-end=30 ><a id="Name_Value_pairs_29"></a>Name Value pairs</h4>
+<ul>
+<li class="has-line-data" data-line-start="30" data-line-end="32">Name value pairs are used so that the server can se which inputted data corresponds to which form element</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="33" data-line-end="36" class="language-HTML"><span class="hljs-comment">&lt;!-- type=name text=value --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span> /&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=41 data-line-end=42 ><a id="The_form_element_41"></a>The <code>&lt;form&gt;</code> element</h4>
+<ul>
+<li class="has-line-data" data-line-start="42" data-line-end="43">The <code>&lt;form&gt;</code> tag defines an HTML form for user input.</li>
+<li class="has-line-data" data-line-start="43" data-line-end="44">action = the URL to the page on the server which receives the information (required).</li>
+<li class="has-line-data" data-line-start="44" data-line-end="46">method = which method to use when sending information to the server (POST or GET (GET as default)).</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="47" data-line-end="51" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"https://www.myserver.something.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=56 data-line-end=57 ><a id="input_element_56"></a><code>&lt;input&gt;</code> element</h4>
+<ul>
+<li class="has-line-data" data-line-start="58" data-line-end="59">The <code>&lt;input&gt;</code> element is used to create several different form controls.</li>
+<li class="has-line-data" data-line-start="59" data-line-end="61">Change the type attribute to detemine what kind.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="62" data-line-end="66" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">"15"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"password"</span> /&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=69 data-line-end=70 ><a id="Labels_and_placeholders_69"></a>Labels and placeholders</h4>
+<pre><code class="has-line-data" data-line-start="72" data-line-end="79" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"font-size: 12px;"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"username"</span>&gt;</span>Username:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">"15"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"font-size: 12px;"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"email"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Email.."</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"font-size: 12px;"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"password"</span>&gt;</span>Password:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"password"</span> /&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=82 data-line-end=83 ><a id="textarea_element_82"></a><code>&lt;textarea&gt;</code> element</h4>
+<ul>
+<li class="has-line-data" data-line-start="84" data-line-end="86"><code>&lt;textarea&gt;</code> is used for Multi-line text input.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="87" data-line-end="91" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"comments"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"15"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"6"</span>&gt;</span>
+Enter your comments here...
+<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=94 data-line-end=95 ><a id="Radio_Buttons_94"></a>Radio Buttons</h4>
+<ul>
+<li class="has-line-data" data-line-start="96" data-line-end="98">Picking just one of a number of options.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="99" data-line-end="105" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"https://www.myserver.something.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"animal"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"cow"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>/&gt;</span> cow
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"animal"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"pig"</span> /&gt;</span> pig
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"animal"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"chicken"</span> /&gt;</span> chicken
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=108 data-line-end=109 ><a id="Checkboxes_108"></a>Checkboxes</h4>
+<ul>
+<li class="has-line-data" data-line-start="110" data-line-end="112">Select one or more options.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="113" data-line-end="119" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"https://www.myserver.something.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"animal"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"cow"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>/&gt;</span> cow
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"animal"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"pig"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>/&gt;</span> pig
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"animal"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"pig"</span> /&gt;</span> chicken
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=122 data-line-end=123 ><a id="Dropdown_list_122"></a>Dropdown list</h4>
+<ul>
+<li class="has-line-data" data-line-start="124" data-line-end="126">Select one option from a dropdown list.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="127" data-line-end="136" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>What is your favorite fruit?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fruits"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"apple"</span>&gt;</span>Apple<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"orange"</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"lemon"</span>&gt;</span>Lemon<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=139 data-line-end=140 ><a id="File_upload_139"></a>File upload</h4>
+<ul>
+<li class="has-line-data" data-line-start="141" data-line-end="143">type=“file” is used for uploading files to the server via a form.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="144" data-line-end="150" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Upload your profile picture<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"file"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"user-profile"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Upload"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=153 data-line-end=154 ><a id="Submitting_the_form_153"></a>Submitting the form</h4>
+<ul>
+<li class="has-line-data" data-line-start="155" data-line-end="156">Pressing the submit button sends the form to the server</li>
+<li class="has-line-data" data-line-start="156" data-line-end="158"><code>&lt;input type=&quot;submit&quot;/&gt;</code></li>
+</ul>
+<pre><code class="has-line-data" data-line-start="159" data-line-end="164" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"submit"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<h4 class="code-line" data-line-start=165 data-line-end=166 ><a id="Date_input_165"></a>Date input</h4>
+<p class="has-line-data" data-line-start="166" data-line-end="167"><code>&lt;input type=&quot;date&quot;/&gt;</code></p>
+<pre><code class="has-line-data" data-line-start="169" data-line-end="174" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"date"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"startdate"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"submit"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=177 data-line-end=178 ><a id="Email__Url_177"></a>Email &amp; Url</h4>
+<pre><code class="has-line-data" data-line-start="180" data-line-end="186" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"url"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"url"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"submit"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=189 data-line-end=190 ><a id="Form_validation_189"></a>Form validation</h4>
+<ul>
+<li class="has-line-data" data-line-start="190" data-line-end="191">Showing a message to the user if they forgot a field</li>
+<li class="has-line-data" data-line-start="191" data-line-end="193">More advanced validation is done using JavaScript</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="194" data-line-end="199" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">required</span>=<span class="hljs-value">"required"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"submit"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=202 data-line-end=203 ><a id="Grouping_form_elements_202"></a>Grouping form elements</h4>
+<pre><code class="has-line-data" data-line-start="205" data-line-end="214" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"http://www.somesite.com/somedoc.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">legend</span>&gt;</span>Contact details<span class="hljs-tag">&lt;/<span class="hljs-title">legend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Email:<span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Mobile:<span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"mobile"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Telephone:<span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"telephone"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>

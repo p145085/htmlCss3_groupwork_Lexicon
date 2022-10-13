@@ -1,0 +1,132 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="11HTML__CSS_0"></a>11.HTML &amp; CSS</h3>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Pseudo_elements_Iframes_and_CSS_variables_1"></a>Pseudo elements, Iframes and CSS variables</h4>
+<hr>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="Pseudoelements_6"></a>Pseudo-elements</h4>
+<ul>
+<li class="has-line-data" data-line-start="7" data-line-end="8">Pseudo-elements acts like an extra element is in the code.</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">They are used to style specified parts of an element.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="11">Example below ::first-letter is like an extra element around the first letter</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="12" data-line-end="14" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"myClass"</span>&gt;</span>Hello world!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<pre><code class="has-line-data" data-line-start="16" data-line-end="20" class="language-CSS"><span class="hljs-class">.myClass</span><span class="hljs-pseudo">::first-letter</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> blue</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="20" data-line-end="21"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_firstletter">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=26 data-line-end=27 ><a id="Pseudoclasses_26"></a>Pseudo-classes</h4>
+<ul>
+<li class="has-line-data" data-line-start="27" data-line-end="28">Pseudo-classes acts like an extra value for a class attribute.</li>
+<li class="has-line-data" data-line-start="28" data-line-end="29">They are used to define a special state of an element.</li>
+<li class="has-line-data" data-line-start="29" data-line-end="31">Example below :hover pseudo class allows you to have extra styles when you hover over that element with the cursor.</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="32" data-line-end="34" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"myClass"</span>&gt;</span>Hello world!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<pre><code class="has-line-data" data-line-start="36" data-line-end="40" class="language-CSS"><span class="hljs-class">.myClass</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> blue</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="40" data-line-end="41"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_hover_div">Try it on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=46 data-line-end=47 ><a id="Remember_the_psuedo_classes_for_links_46"></a>Remember the psuedo classes for links?</h4>
+<pre><code class="has-line-data" data-line-start="49" data-line-end="71" class="language-CSS"><span class="hljs-comment">/* unvisited link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:link</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+
+<span class="hljs-comment">/* visited link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:visited</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> green</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
+}</span>
+
+<span class="hljs-comment">/* mouse over link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> hotpink</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> underline</span></span>;
+}</span>
+
+<span class="hljs-comment">/* selected link */</span>
+<span class="hljs-tag">a</span><span class="hljs-pseudo">:active</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> blue</span></span>;
+}</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=76 data-line-end=77 ><a id="_vs__76"></a>:: vs :</h4>
+<ul>
+<li class="has-line-data" data-line-start="78" data-line-end="79">The double colon replaced the single-colon notation for pseudo-elements in CSS3.</li>
+<li class="has-line-data" data-line-start="79" data-line-end="80">Pseudo-elements uses double ::</li>
+<li class="has-line-data" data-line-start="80" data-line-end="81">Pseudo-classes uses single :</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=86 data-line-end=87 ><a id="Before_and_after_with_content_86"></a>Before and after with content</h4>
+<pre><code class="has-line-data" data-line-start="89" data-line-end="91" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<pre><code class="has-line-data" data-line-start="92" data-line-end="102" class="language-CSS"><span class="hljs-tag">p</span><span class="hljs-pseudo">::before</span> <span class="hljs-rules">{ 
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">"«"</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> blue</span></span>;
+}</span>
+
+<span class="hljs-tag">p</span><span class="hljs-pseudo">::after</span> <span class="hljs-rules">{ 
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">"»"</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="103" data-line-end="104">«Hello World!»</p>
+<p class="has-line-data" data-line-start="105" data-line-end="106"><a href="https://www.w3schools.com/cssref/pr_gen_content.asp">More about content on w3schools</a></p>
+<hr>
+<h4 class="code-line" data-line-start=111 data-line-end=112 ><a id="CSS_content_only_works_with_before_or_after_111"></a>CSS content only works with ::before or ::after</h4>
+<hr>
+<h4 class="code-line" data-line-start=116 data-line-end=117 ><a id="Iframes_116"></a>Iframes</h4>
+<ul>
+<li class="has-line-data" data-line-start="118" data-line-end="119">Iframes are windows that you cut out from your page, which can be displayed in another page.</li>
+<li class="has-line-data" data-line-start="119" data-line-end="120">You can embed Google maps, Google docs, Youtube videos for example.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=125 data-line-end=126 ><a id="Youtube_video_in_an_iframe_125"></a>Youtube video in an iframe</h4>
+<pre><code class="has-line-data" data-line-start="127" data-line-end="133" class="language-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span>
+  <span class="hljs-attribute">width</span>=<span class="hljs-value">"420"</span>
+  <span class="hljs-attribute">height</span>=<span class="hljs-value">"315"</span>
+  <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://www.youtube.com/embed/tgbNymZ7vqY"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+</code></pre>
+<hr>
+<h4 class="code-line" data-line-start=138 data-line-end=139 ><a id="Youtube_video_in_an_iframe_138"></a>Youtube video in an iframe</h4>
+<ul>
+<li class="has-line-data" data-line-start="140" data-line-end="141">We display youtube content on this site.</li>
+<li class="has-line-data" data-line-start="141" data-line-end="143">Meaning that if youtube crashes or being remved from the service, the video will not be displayed properly.</li>
+</ul>
+<p class="has-line-data" data-line-start="143" data-line-end="148">&lt;iframe<br>
+width=“420”<br>
+height=“315”<br>
+src=&quot;<a href="https://www.youtube.com/embed/tgbNymZ7vqY">https://www.youtube.com/embed/tgbNymZ7vqY</a>&quot;&gt;<br>
+&lt;/iframe&gt;</p>
+<hr>
+<h4 class="code-line" data-line-start=152 data-line-end=153 ><a id="Go_to_youtube_and_google_maps_to_get_code_for_embedding_152"></a>Go to youtube and google maps to get code for embedding.</h4>
+<hr>
+<h4 class="code-line" data-line-start=157 data-line-end=158 ><a id="CSS_variables_157"></a>CSS variables</h4>
+<ul>
+<li class="has-line-data" data-line-start="158" data-line-end="159">What is a variable?</li>
+<li class="has-line-data" data-line-start="159" data-line-end="160">Temporary storage for bits of information.</li>
+<li class="has-line-data" data-line-start="160" data-line-end="161">A variable is like a drawer or a box.</li>
+<li class="has-line-data" data-line-start="161" data-line-end="162">You can put a value/thing in it, close it and then when you want to use it you open the drawer.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=167 data-line-end=168 ><a id="CSS_variables_167"></a>CSS variables</h4>
+<pre><code class="has-line-data" data-line-start="170" data-line-end="185" class="language-CSS"><span class="hljs-comment">/* :root or the body can be used for global scope classes
+  use double dash (--) to declare a CSS variable */</span>
+<span class="hljs-pseudo">:root</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">--main-bg-color</span>:<span class="hljs-value"> coral</span></span>;
+}</span>
+
+<span class="hljs-comment">/* the color can now be used in multiple places */</span>
+<span class="hljs-id">#div1</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--main-bg-color)</span></span>;
+}</span>
+
+<span class="hljs-id">#div2</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-function">var</span>(--main-bg-color)</span></span>;
+}</span>
+</code></pre>
+<p class="has-line-data" data-line-start="185" data-line-end="186"><a href="https://www.w3schools.com/css/css3_variables.asp">w3schools</a></p>
